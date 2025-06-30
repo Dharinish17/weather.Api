@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <input id="text" type="text" placeholder="Enter City Name">
+        <button id="search-logo"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div id="main">
+        <div id="left-div" class="same">
+            <div id="location">
+                <h2>City Name</h2>
+                <br>
+                <p>Discription:</p>
+                <br>
+                <hr>
+                <br>
+                <div id="date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Date:</p>
+                </div>
+                <br>
+                <div id="time">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Time:</p>
+                </div>
+            </div>
+            <div id="temp">
+                <h2>🌡️Temparature details</h2>
+                <br>
+                <p>Current Temp:</p>
+                <br>
+                <p>Feels Like:</p>
+                <br>
+                <p>Min Temp:</p>
+                <br>
+                <p>Max Temp:</p>
+            </div>
+        </div>
+
+        <div id="right-div" class="same">
+            <div id="weather">
+                <h2>Current Weather</h2>
+                <br>
+                <p>Main Condition:</p>
+                <br>
+                <br>
+                <p>Discription:</p>
+                <div id="logo"><i id="thing" class="fa-solid fa-sun" style="color: #FFD43B;"></i></i></i></div>
+            </div>
+            <div id="inside-right-div">
+                <div id="humidity">
+                  <h2>💧Humidity And Pressure</h2>
+                  <br>
+                  <p>Humidity:</p>
+                  <br>
+                  <p>Pressure:</p>
+                  <br>
+                  <p>Sea Level Pressure:</p>
+                  <br>
+                  <p>Ground Level Pressure:</p>
+                </div>
+                <div id="wind">
+                    <h2>💨Wind</h2>
+                    <br>
+                    <p>Speed:</p>
+                    <br>
+                    <p>Direction:</p>
+                    <br>
+                    <p>Gust:</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom-div" class="same">
+            <div id="ss">
+                <div id="box1">
+                    <div id="sun-rise"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></div>
+                    <p>Sun Rise:11:00am</p>
+                </div>
+                <div id="box2">
+                    <div id="sun-set"><i class="fa-solid fa-moon" style="color: #f7f7f8;"></i></i></div>
+                    <p>Sun Set: 11:00pm</p>
+                </div>
+            </div>
+            <div id="other">
+                <br>
+                <p>🌧️Rainfall(last 1hr):</p>
+                <br>
+                <p>☁️Cloudliness:</p>
+                <br>
+                <p>🔎Visibility:</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

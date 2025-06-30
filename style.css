@@ -1,0 +1,364 @@
+*{
+    padding: 0em;
+    margin: 0em;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://images.unsplash.com/photo-1503785640985-f62e3aeee448?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex; */
+}
+
+#nav{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    height: 40px;
+    width:40%;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    padding-left: 2em;
+    font-size: 1rem;
+}
+
+#search-logo{
+    position: absolute;
+    margin-left: 38%;
+    height: 40px;
+    background-color: white;
+    border: none;
+}
+
+#search-logo:hover{
+    cursor: pointer;
+}
+
+#main{
+    display: flex;
+}
+
+#left-div{
+    height: 59vh;
+    width: 30%;
+    /* border: 2px solid black; */
+}
+
+#location{
+    height: 180px;
+    width: 88%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 2%;
+    margin-left: 4%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+}
+#location p {
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+#date{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+#time{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+#temp{
+    height: 180px;
+    width: 88%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-left: 4%;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+}
+#temp p{
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+
+#right-div{
+    height: 59vh;
+    width: 70%;
+    /* border: 2px solid red; */
+}
+
+#weather{
+    height: 175px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 1%;
+    margin-left: 4%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+}
+#weather p {
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+
+#logo{
+    height: 165px;
+    width: 20%;
+    /* background-color: black; */
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#thing{
+    font-size: 9rem;
+}
+
+#inside-right-div{
+    display: flex;
+}
+
+#humidity{
+    height: 190px;
+    width: 42.5%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 1%;
+    margin-left: 4%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(10px);
+}
+#humidity p{
+    font-size: 1.2rem;
+    font-weight: 530;
+    color: rgb(10, 0, 0);
+}
+
+#wind{
+    height: 180px;
+    width: 42.2%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 1%;
+    margin-left: 4%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+}
+#wind p{
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+
+#bottom-div{
+    height: 29vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ss{
+    height: 175px;
+    width: 56%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+}
+#ss p {
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+#box1{
+    height: 165px;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+}
+#box2{
+    height: 165px;
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+}
+#sun-rise{
+    height: 165px;
+    width: 40%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+#sun-set{
+    height: 165px;
+    width: 40%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+
+#other{
+    height: 175px;
+    width: 34%;
+    border: 1px solid rgba(255, 255, 255, 0.526);
+    margin-top: 1%;
+    margin-right: 3%;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(212,212,212,0.4);
+    backdrop-filter: blur(5px);
+}
+#other p {
+    font-size: 1.2rem;
+    font-weight: 530;
+}
+
+
+
+
+@media (max-width: 767px){
+    #nav{
+    width: 100%;
+    height: 10vh;
+}
+
+#text{
+    height: 40px;
+    width: 80%;
+}
+
+#search-logo{
+    margin-left: 78%;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-div{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+}   
+
+#right-div{
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#bottom-div{
+    height: 80vh;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ss{
+    height: 175px;
+    width: 91%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+#box1{
+    flex-direction: column;
+}
+
+#box2{
+    flex-direction: column;
+}
+
+#other{
+    height: 175px;
+    width: 91%;
+    margin-left: 4%;
+    border-radius: 8px;
+}
+}
+
+
+
+
+@media (max-width: 767px) {
+#logo{
+    right: 50px;
+}
+
+#thing{
+    font-size: 6rem;
+}   
+
+#humidity{
+    height: 260px;
+}
+
+#box1{
+    gap: 2rem;
+}
+
+#box2{
+    gap: 2rem;
+}
+
+#sun-rise{
+    font-size: 6rem;
+}
+
+#sun-set{
+    font-size: 6rem;
+}
+}
+
