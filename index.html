@@ -17,32 +17,32 @@
     <div id="main">
         <div id="left-div" class="same">
             <div id="location">
-                <h2>City Name</h2>
+                <h1 id="cityName">City Name</h1>
                 <br>
-                <p>Discription:</p>
+                <p id="discription">Description:</p>
                 <br>
                 <hr>
                 <br>
                 <div id="date">
                     <i class="fa-solid fa-calendar-days"></i>
-                    <p>Date:</p>
+                    <p id="dates">Date:</p>
                 </div>
                 <br>
                 <div id="time">
                     <i class="fa-solid fa-clock"></i>
-                    <p>Time:</p>
+                    <p id="times">Time:</p>
                 </div>
             </div>
             <div id="temp">
                 <h2>🌡️Temparature details</h2>
                 <br>
-                <p>Current Temp:</p>
+                <p id="current-temp">Current Temp:</p>
                 <br>
-                <p>Feels Like:</p>
+                <p id="feels-like">Feels Like:</p>
                 <br>
-                <p>Min Temp:</p>
+                <p id="min-temp">Min Temp:</p>
                 <br>
-                <p>Max Temp:</p>
+                <p id="max-temp">Max Temp:</p>
             </div>
         </div>
 
@@ -50,32 +50,32 @@
             <div id="weather">
                 <h2>Current Weather</h2>
                 <br>
-                <p>Main Condition:</p>
+                <p id="main-cond">Main Condition:</p>
                 <br>
                 <br>
-                <p>Discription:</p>
-                <div id="logo"><i id="thing" class="fa-solid fa-sun" style="color: #FFD43B;"></i></i></i></div>
+                <p id="discriptions">Description:</p>
+                <div id="logo"><img class="img" id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" /></div>
             </div>
             <div id="inside-right-div">
                 <div id="humidity">
                   <h2>💧Humidity And Pressure</h2>
                   <br>
-                  <p>Humidity:</p>
+                  <p id="humid">Humidity:</p>
                   <br>
-                  <p>Pressure:</p>
+                  <p id="pressure">Pressure:</p>
                   <br>
-                  <p>Sea Level Pressure:</p>
+                  <p id="sea-level-pressure">Sea Level Pressure:</p>
                   <br>
-                  <p>Ground Level Pressure:</p>
+                  <p id="ground-level-pressure">Ground Level Pressure:</p>
                 </div>
                 <div id="wind">
                     <h2>💨Wind</h2>
                     <br>
-                    <p>Speed:</p>
+                    <p id="speed">Speed:</p>
                     <br>
-                    <p>Direction:</p>
+                    <p id="direction">Direction:</p>
                     <br>
-                    <p>Gust:</p>
+                    <p id="gust">Gust:</p>
                 </div>
             </div>
         </div>
@@ -83,24 +83,27 @@
         <div id="bottom-div" class="same">
             <div id="ss">
                 <div id="box1">
-                    <div id="sun-rise"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></div>
-                    <p>Sun Rise:11:00am</p>
+                    <div id="sun-rise"><img  class="img" src="https://th.bing.com/th/id/R.ba290d0ef29238b37fb6a5c77930e93e?rik=a96O7Td%2b8amSNA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fsun-png-no-background-png-sun-png-1080.png&ehk=y7oHNl3QafoXcUhA%2fx3Q3L%2bb048btx49KRuh09%2bz8fo%3d&risl=&pid=ImgRaw&r=0" alt="sun-rise"></div>
+                    <p  id="sun-r">Sun Rise: 0:00:00am</p>
                 </div>
                 <div id="box2">
-                    <div id="sun-set"><i class="fa-solid fa-moon" style="color: #f7f7f8;"></i></i></div>
-                    <p>Sun Set: 11:00pm</p>
+                    <div id="sun-set"><img class="img" src="https://th.bing.com/th/id/R.d84768c1901140f84a7d360e1368fb6c?rik=AZsHiwOw7DC36g&riu=http%3a%2f%2fwww.freeiconspng.com%2fuploads%2fmoon-png-no-background-15.png&ehk=CF5hSLsC0leJsjW0XSizzmJc1BgibCVNvLR%2bc%2fWhM68%3d&risl=&pid=ImgRaw&r=0" alt="sun-set"></div>
+                    <p id="sun-s">Sun Set: 0:00:00pm</p>
                 </div>
             </div>
             <div id="other">
                 <br>
-                <p>🌧️Rainfall(last 1hr):</p>
+                <!-- rainfall(last 1hr) is not present in the current api ignore it -->
+                <p id="rainfall">🌧️Rainfall(last 1hr):</p>
                 <br>
-                <p>☁️Cloudliness:</p>
+                <p id="cloud">☁️Cloudliness:</p>
                 <br>
-                <p>🔎Visibility:</p>
+                <p id="visibility">🔎Visibility:</p>
             </div>
         </div>
     </div>
     
+
+    <script src="logic.js"></script>
 </body>
 </html>
