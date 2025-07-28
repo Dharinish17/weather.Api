@@ -23,6 +23,7 @@ This is a responsive weather website that displays real-time weather data (tempe
 ---
 
 🛠️ Tech Stack
+
 HTML5
 
 CSS3
